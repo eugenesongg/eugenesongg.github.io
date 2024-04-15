@@ -32,6 +32,10 @@
             margin-right: 20px;
         }
 
+        ul li:last-child {
+            margin-right: 0;
+        }
+
         ul li a {
             text-decoration: none;
             color: #808080;
@@ -51,6 +55,24 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        /* 검색 아이콘 스타일 */
+        .search-icon {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        /* 검색창 스타일 */
+        .search-box {
+            display: none;
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -60,6 +82,15 @@
         <a href="index.html">
             <img src="images/logo.png" alt="logo">
         </a>
+        <!-- 검색 아이콘 -->
+        <div class="search-icon" onclick="toggleSearch()">
+            <img src="images/search-icon.png" alt="Search">
+        </div>
+        <!-- 검색창 -->
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="검색어를 입력하세요...">
+            <button onclick="search()">검색</button>
+        </div>
     </header>
 
     <h1 style="text-align: center;">Eugene Song</h1>
@@ -75,8 +106,28 @@
     <p style="text-align: center;"><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
 
     <footer>
-        mail: eugene.songg@gmail.com
+        Email: eugene.songg@gmail.com
     </footer>
+
+    <script>
+        function toggleSearch() {
+            var searchBox = document.getElementById("searchBox");
+            if (searchBox.style.display === "none") {
+                searchBox.style.display = "block";
+            } else {
+                searchBox.style.display = "none";
+            }
+        }
+
+        function search() {
+            var searchText = document.getElementById("searchBox").querySelector("input").value;
+            // 여기에 검색 기능 추가
+            alert("검색어: " + searchText);
+        }
+    </script>
 </body>
 
 </html>
+
+
+     
