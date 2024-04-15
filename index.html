@@ -53,15 +53,25 @@
         ul ul {
             display: none; /* 기본적으로 하위 메뉴 숨김 */
             position: absolute;
-            background-color: #f2f2f2; /* 하위 메뉴 배경색 */
+            background-color: #ffffff; /* 하위 메뉴 배경색 흰색으로 변경 */
             padding: 10px;
             top: 30px; /* 상위 메뉴 아래에 위치 */
             left: 0;
             z-index: 1; /* 다른 요소 위에 표시 */
+            border-radius: 0 0 5px 5px; /* 하위 메뉴 모서리를 둥글게 만듦 */
         }
 
         ul li:hover ul {
             display: block; /* 호버 시 하위 메뉴 표시 */
+        }
+
+        ul li > a::after {
+            content: "^"; /* 화살표 추가 */
+            margin-left: 5px;
+        }
+
+        ul ul li {
+            color: #808080; /* 하위 폴더 글자색 회색으로 변경 */
         }
 
         footer {
@@ -83,6 +93,11 @@
         .social-icons a:hover {
             color: #000000;
         }
+
+        .intro {
+            text-align: left;
+            margin-left: 20px; /* 왼쪽 여백 추가 */
+        }
     </style>
 </head>
 
@@ -92,10 +107,9 @@
         <a href="index.html">
             <img src="images/logo.png" alt="logo">
         </a>
-        <div>
-            <h1>Eugene Song</h1>
-            <p>세계를 뒤흔들 놀라운 일대기</p>
-            text-align: left;
+        <div class="intro">
+            <h3>이 공간은?</h3>
+            <p><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
         </div>
     </header>
 
@@ -111,9 +125,6 @@
             </ul>
         </li>
     </ul>
-
-    <h3 style="text-align: center;">이 공간은?</h3>
-    <p style="text-align: center;"><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
 
     <footer>
         <p>&copy; 2024 Eugene Song</p>
