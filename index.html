@@ -66,8 +66,8 @@
             display: block; /* 호버 시 하위 메뉴 표시 */
         }
 
-        ul li > a::after {
-            content: "^"; /* 화살표 추가 */
+        ul li.archive > a::after {
+            content: "⋁"; /* 화살표 추가 */
             margin-left: 5px;
         }
 
@@ -98,6 +98,12 @@
         .main-content {
             padding: 20px;
         }
+
+        /* 텍스트에 밑줄 제거 및 색상 유지 */
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
     </style>
 </head>
 
@@ -105,26 +111,22 @@
     <header>
         <div>
             <a href="index.html">
-            <h1>Eugene Song</h1>
-                 </a>
+                <h1>Eugene Song</h1>
+            </a>
             <p>세계를 뒤흔들 놀라운 일대기</p>
-                
         </div>
-        
-       
     </header>
 
     <ul>
-        <li><a href="aboutme.html">ABOUT ME</a></li>
-        <li><a href="physik.html">PHYSIK</a></li>
-        <li>
-            <a href="#">ARCHIVE</a>
+        <li class="archive"><a href="#">ARCHIVE</a>
             <ul>
                 <li><a href="archive/REVIEW.html">REVIEW</a></li>
                 <li><a href="archive/FARMING.html">FARMING</a></li>
                 <li><a href="archive/ETC.html">ETC</a></li>
             </ul>
         </li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="physik.html">PHYSIK</a></li>
     </ul>
 
     <div class="main-content">
@@ -134,7 +136,7 @@
 
     <footer>
         <p>&copy; 2024 Eugene Song</p>
-        <p>Contact</p>
+
         <div class="social-icons">
             <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.png" alt="email"></a>
             <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.jpg" alt="instagram"></a>
