@@ -154,21 +154,22 @@
 
     <footer>
         <div class="social-icons">
-            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.png" alt="email" style="width: 10px; height: auto;"></a>
-            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.jpg" alt="instagram" style="width: 10px; height: auto;"></a>
-            <a href="https://github.com/eugenesongg"><img src="images/git.png" alt="github" style="width: 10px; height: auto;"></a>
+            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.png" alt="email" style="width: 20px; height: auto;"></a>
+            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.jpg" alt="instagram" style="width: 20px; height: auto;"></a>
+            <a href="https://github.com/eugenesongg"><img src="images/git.png" alt="github" style="width: 20px; height: auto;"></a>
         </div>
         <p>&copy; 2024 Eugene Song</p>
 
     </footer>
 
     <script>
-        // 하위 메뉴가 사라지는 문제 해결
         const archiveMenu = document.querySelector('.archive');
-        archiveMenu.addEventListener('mouseleave', () => {
-            setTimeout(() => {
+        // 마우스가 메뉴 바깥으로 이동할 때 하위 메뉴를 숨깁니다.
+        document.addEventListener('mouseover', (event) => {
+            const isArchiveMenu = event.target.closest('.archive');
+            if (!isArchiveMenu) {
                 archiveMenu.querySelector('ul').style.display = 'none';
-            }, 500);
+            }
         });
     </script>
 </body>
