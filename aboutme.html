@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px; /* 전체 콘텐츠에 여백 추가 */
-        }
-
-        .container {
-            max-width: 800px; /* 콘텐츠 최대 너비 지정 */
-            margin: 0 auto; /* 가운데 정렬 */
-            text-align: center; /* 가운데 정렬 */
-        }
-
-        h1 {
-            color: #000000; /* 제목 색상 */
-            margin-bottom: 20px; /* 제목 아래 여백 */
-        }
-
-        p {
-            color: #808080; /* 본문 색상 */
-            line-height: 1.6; /* 줄간격 조정 */
-            margin-bottom: 20px; /* 본문 아래 여백 */
-        }
-
-        .section {
-            margin-bottom: 40px; /* 섹션 간격 조정 */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>About Eugene</h1>
+    <header>
+        <div>
+            <a href="index.html">
+                <h1>Eugene Song</h1>
+            </a>
+            <p>세계를 뒤흔들 놀라운 일대기</p>
+        </div>
+    </header>
 
-        <!-- 첫 번째 섹션 -->
-        <section class="section">
-             <img src="images/lebenslauf.PNG" alt="bio">
-            <h2>장래희망</h2>
-            <p>뽀로로</p>
+    <ul>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="physik.html">PHYSIK</a></li>
+        <li class="archive"><a href="#">ARCHIVE</a>
+            <ul>
+                <li><a href="archive/REVIEW.html">REVIEW</a></li>
+                <li><a href="archive/FARMING.html">FARMING</a></li>
+                <li><a href="archive/ETC.html">ETC</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div class="main-content">
+        <section>
+            <h2>About Eugene</h2>
+            
+            <p>안녕하세요! 저는 유진입니다. 세계를 뒤흔들 놀라운 일대기를 공유하는 것을 좋아하고, 다양한 주제에 관심이 많습니다.</p>
+            <p>제 이야기와 함께 여러분도 새로운 시선으로 세상을 바라보게 될 것입니다.</p>
         </section>
-
-        <!-- 두 번째 섹션 -->
-        <section class="section">
-            <h2>My Interests</h2>
-            <p>Aliquam sed purus sit amet libero suscipit pharetra vel vitae sapien. Phasellus hendrerit purus sit amet tellus consectetur dignissim. Nulla posuere eleifend lacus, id tristique nulla mattis eget.</p>
+        <section>
+            <h2>Contact Me</h2>
+            <p>이메일: eugene.songg@gmail.com</p>
+            <p>인스타그램: <a href="https://www.instagram.com/eugene.songg/">@eugene.songg</a></p>
+            <p>깃허브: <a href="https://github.com/eugenesongg">eugenesongg</a></p>
         </section>
     </div>
-</body>
-     <footer>
+
+    <footer>
         <div class="social-icons">
-            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.PNG" alt="email" style="width: 40px; height: auto;"></a>
-            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.JPG" alt="instagram" style="width: 40px; height: auto;"></a>
-            <a href="https://github.com/eugenesongg"><img src="images/git.PNG" alt="github" style="width: 40px; height: auto;"></a>
+            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.PNG" alt="email"></a>
+            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.JPG" alt="instagram"></a>
+            <a href="https://github.com/eugenesongg"><img src="images/git.PNG" alt="github"></a>
         </div>
         <p>&copy; 2024 Eugene Song</p>
-
     </footer>
+
+    <script>
+        const archiveMenu = document.querySelector('.archive');
+        archiveMenu.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                archiveMenu.querySelector('ul').style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
 
 </html>
