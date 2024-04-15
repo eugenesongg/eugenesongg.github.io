@@ -12,19 +12,21 @@
         }
 
         header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
         }
 
         header img {
-            display: block;
-            margin: 0 auto;
+            height: 50px; /* 이미지 높이 조정 */
         }
 
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: right; /* 메뉴 오른쪽 정렬 */
         }
 
         ul li {
@@ -73,23 +75,31 @@
         <a href="index.html">
             <img src="images/logo.png" alt="logo">
         </a>
+        <div>
+            <h1>Eugene Song</h1>
+            <p>세계를 뒤흔들 놀라운 일대기</p>
+        </div>
     </header>
-
-    <h1 style="text-align: center;">Eugene Song</h1>
-    <p style="text-align: center;">세계를 뒤흔들 놀라운 일대기</p>
 
     <ul>
         <li><a href="aboutme.html">About me</a></li>
         <li><a href="physik.html">Physik</a></li>
-        <li><a href="hobby.html">Hobby</a></li>
+        <li>
+            <a href="#">Hobby</a>
+            <ul>
+                <li><a href="hobby/1.html">1</a></li>
+                <li><a href="hobby/2.html">2</a></li>
+                <li><a href="hobby/3.html">3</a></li>
+            </ul>
+        </li>
     </ul>
 
     <h3 style="text-align: center;">이 공간은?</h3>
     <p style="text-align: center;"><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
 
     <footer>
-        <p>&copy; 2024 Eugene Song
-        Contact
+        <p>&copy; 2024 Eugene Song</p>
+        <p>Contact</p>
         <div class="social-icons">
             <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.png" alt="email"></a>
             <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.jpg" alt="instagram"></a>
