@@ -1,127 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eugene Song</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0; /* body의 기본 margin 제거 */
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        header img {
-            height: 50px; 
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: right; /* 메뉴 오른쪽 정렬 */
-        }
-
-        ul li {
-            display: inline-block; 
-            margin-right: 20px;
-            position: relative;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #808080;
-            transition: color 0.3s;
-            display: block; 
-            padding: 10px; 
-        }
-
-        ul li a:hover,
-        ul li a:focus {
-            color: #000000;
-        }
-
-        ul li a:visited {
-            color: #ff69b4;
-        }
-
-        ul ul {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            padding: 10px;
-            top: 100%; /* 상위 메뉴 아래에 위치 */
-            left: 0;
-            z-index: 1;
-        }
-
-        ul li:hover ul {
-            display: block;
-        }
-
-        ul li.archive > a::after {
-            content: "⋁";
-            margin-left: 5px;
-        }
-
-        ul ul li {
-            color: #808080;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f2f2f2;
-            padding: 20px 0;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            margin-right: 10px;
-            color: #808080;
-            font-size: 20px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #000000;
-        }
-
-        .main-content {
-            padding: 20px;
-            text-align: center; /* 이미지 중앙 정렬 */
-        }
-
-        img {
-            display: block;
-            margin: 0 auto; /* 이미지 가운데 정렬 */
-        }
-
-        /* 텍스트에 밑줄 제거 및 색상 유지 */
-        a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        /* 구분선 스타일 */
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #808080;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <div>
@@ -147,19 +31,18 @@
     <hr>
 
     <div class="main-content">
-        <h3 style="text-align: center;">이 공간은?</h3>
-        <p style="text-align: center;"><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
+        <h3>이 공간은?</h3>
+        <p><strong>유진</strong>이에 의한 <strong>유진</strong>을 위한 공간</p>
         <img src="images/1.jpg" alt="eu">
     </div>
 
     <footer>
         <div class="social-icons">
-            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.PNG" alt="email" style="width: 40px; height: auto;"></a>
-            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.JPG" alt="instagram" style="width: 40px; height: auto;"></a>
-            <a href="https://github.com/eugenesongg"><img src="images/git.PNG" alt="github" style="width: 40px; height: auto;"></a>
+            <a href="mailto:eugene.songg@gmail.com"><img src="images/mail.PNG" alt="email"></a>
+            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.JPG" alt="instagram"></a>
+            <a href="https://github.com/eugenesongg"><img src="images/git.PNG" alt="github"></a>
         </div>
         <p>&copy; 2024 Eugene Song</p>
-
     </footer>
 
     <script>
@@ -171,5 +54,4 @@
         });
     </script>
 </body>
-
 </html>
