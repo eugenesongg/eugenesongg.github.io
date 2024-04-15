@@ -154,6 +154,16 @@
             <a href="https://github.com/eugenesongg"><img src="images/git.png" alt="github" style="width: 20px; height: auto;"></a>
         </div>
     </footer>
+
+    <script>
+        // 하위 메뉴가 사라지는 문제 해결
+        const archiveMenu = document.querySelector('.archive');
+        archiveMenu.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                archiveMenu.querySelector('ul').style.display = 'none';
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
