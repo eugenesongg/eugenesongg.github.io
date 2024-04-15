@@ -1,4 +1,3 @@
-/* style.css */
 body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
@@ -13,7 +12,7 @@ header {
 }
 
 header img {
-    height: 50px; 
+    height: 50px;
 }
 
 ul {
@@ -24,7 +23,7 @@ ul {
 }
 
 ul li {
-    display: inline-block; 
+    display: inline-block;
     margin-right: 20px;
     position: relative;
 }
@@ -33,8 +32,8 @@ ul li a {
     text-decoration: none;
     color: #808080;
     transition: color 0.3s;
-    display: block; 
-    padding: 10px; 
+    display: block;
+    padding: 10px;
 }
 
 ul li a:hover,
@@ -71,8 +70,9 @@ ul ul li {
 
 footer {
     text-align: center;
+    margin-top: 5px;
     background-color: #f2f2f2;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .social-icons a {
@@ -112,3 +112,9 @@ hr {
     margin: 20px 0;
 }
 
+/* 모바일 화면에 맞춰 이미지 크기 조정 */
+@media screen and (max-width: 600px) {
+    img {
+        width: 100%; /* 이미지가 화면 너비에 맞게 조정 */
+    }
+}
