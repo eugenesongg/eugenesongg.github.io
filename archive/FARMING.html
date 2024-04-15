@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 추가한 CSS */
+        .main-content {
+            display: flex; /* 섹션을 가로로 배열 */
+            justify-content: space-between; /* 섹션 간격을 균등하게 배치 */
+            align-items: center; /* 섹션 아이템을 수직으로 정렬 */
+        }
+
+        section {
+            flex: 1; /* 섹션 너비를 동일하게 설정 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+
+        section:nth-child(2) {
+            text-align: left; /* 두 번째 섹션 텍스트 왼쪽 정렬 */
+        }
+
+        section img {
+            display: block; /* 이미지를 블록 요소로 표시하여 가운데 정렬 */
+            margin: 0 auto; /* 이미지를 가운데로 정렬 */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <h1>Eugene Song</h1>
+            </a>
+            <p>세계를 뒤흔들 놀라운 일대기</p>
+        </div>
+    </header>
+
+    <ul>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="physik.html">PHYSIK</a></li>
+        <li class="archive"><a href="#">ARCHIVE</a>
+            <ul>
+                <li><a href="archive/REVIEW.html">REVIEW</a></li>
+                <li><a href="archive/FARMING.html">FARMING</a></li>
+                <li><a href="archive/ETC.html">ETC</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div class="main-content">
+        <section>
+            <h2>Farming</h2>
+            <p> 앞으로 뭐가 올라올지 궁금하지 않으신가용ㅇ??</p>
+        </section>
+        
+         
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="mailto:eugene.songg@gmail.com"><img src="images/MA.png" alt="email" style="width: 25px; height: auto;"></a>
+            <a href="https://www.instagram.com/eugene.songg/"><img src="images/insta.png" alt="instagram" style="width: 35px; height: auto;"></a>
+        </div>
+        <p>&copy; 2024 Eugene Song</p>
+    </footer>
+
+    <script>
+        const archiveMenu = document.querySelector('.archive');
+        archiveMenu.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                archiveMenu.querySelector('ul').style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
