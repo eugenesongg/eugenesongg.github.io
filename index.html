@@ -20,7 +20,7 @@
         }
 
         header img {
-            height: 50px; /* 이미지 높이 조정 */
+            height: 50px; 
         }
 
         ul {
@@ -31,7 +31,7 @@
         }
 
         ul li {
-            display: inline-block; /* 변경된 속성 */
+            display: inline-block; 
             margin-right: 20px;
             position: relative;
         }
@@ -40,8 +40,8 @@
             text-decoration: none;
             color: #808080;
             transition: color 0.3s;
-            display: block; /* 변경된 속성 */
-            padding: 10px; /* 변경된 속성 */
+            display: block; 
+            padding: 10px; 
         }
 
         ul li a:hover,
@@ -98,12 +98,12 @@
 
         .main-content {
             padding: 20px;
-            text-align: center; /* 이미지 중앙 정렬을 위해 추가된 스타일 */
+            text-align: center; /* 이미지 중앙 정렬 */
         }
 
         img {
             display: block;
-            margin: 0 auto; /* 이미지를 가운데 정렬 */
+            margin: 0 auto; /* 이미지 가운데 정렬 */
         }
 
         /* 텍스트에 밑줄 제거 및 색상 유지 */
@@ -164,12 +164,10 @@
 
     <script>
         const archiveMenu = document.querySelector('.archive');
-        // 마우스가 메뉴 바깥으로 이동할 때 하위 메뉴를 숨깁니다.
-        document.addEventListener('mouseover', (event) => {
-            const isArchiveMenu = event.target.closest('.archive');
-            if (!isArchiveMenu) {
+        archiveMenu.addEventListener('mouseleave', () => {
+            setTimeout(() => {
                 archiveMenu.querySelector('ul').style.display = 'none';
-            }
+            }, 500);
         });
     </script>
 </body>
