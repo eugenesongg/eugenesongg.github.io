@@ -1,7 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-    margin: 0; /* body의 기본 margin 제거 */
+    margin: 0; /*  margin entfernen */
 }
 
 header {
@@ -19,7 +19,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: right; /* 메뉴 오른쪽 정렬 */
+    text-align: right; /* menü nach rechts */
 }
 
 ul li {
@@ -50,7 +50,7 @@ ul ul {
     position: absolute;
     background-color: #ffffff;
     padding: 10px;
-    top: 100%; /* 상위 메뉴 아래에 위치 */
+    top: 100%; /* 상위 메뉴 아래 위치 */
     left: 0;
     z-index: 1;
 }
@@ -90,21 +90,21 @@ footer {
 
 .main-content {
     padding: 20px;
-    text-align: center; /* 이미지 중앙 정렬 */
+    text-align: center; /* image center */
 }
 
 img {
     display: block;
-    margin: 0 auto; /* 이미지 가운데 정렬 */
+    margin: 0 auto; /* image center */
 }
 
-/* 텍스트에 밑줄 제거 및 색상 유지 */
+/* text 밑줄 제거 + 색상 유지 */
 a {
     text-decoration: none;
     color: #000000;
 }
 
-/* 구분선 스타일 */
+/* 구분선 */
 hr {
     border: 0;
     height: 1px;
@@ -112,9 +112,9 @@ hr {
     margin: 20px 0;
 }
 
-/* 모바일 화면에 맞춰 이미지 크기 조정 */
+/* 모바일 화면에 따라 이미지 크기 조정 */
 @media screen and (max-width: 600px) {
     img {
-        width: 100%; /* 이미지가 화면 너비에 맞게 조정 */
+        width: 100%; /* 이미지 화면 너비에 맞게 조정 */
     }
 }
