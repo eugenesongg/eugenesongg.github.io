@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eugene Song</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<script>
+  const link = document.querySelector('link[rel="shortcut icon"]');
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  const img = new Image();
+  img.onload = function () {
+    canvas.width = 32;
+    canvas.height = 32;
+    ctx.drawImage(img, 0, 0, 32, 32);
+    link.href = canvas.toDataURL();
+  };
+  img.src = "images/logo.png"; 
+</script>
 </head>
 <body>
     <header>
